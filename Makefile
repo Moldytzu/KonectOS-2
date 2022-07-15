@@ -14,7 +14,7 @@ deps-debian: deps-llvm
 	sudo apt install nasm xorriso build-essential qemu-system-x86 -y
 
 clean:
-	rm -rf ./Bin
+	sudo rm -rf ./Bin ./Sources/Libs/libc/Lib/ ./Sources/Kernel/Lib/ ./Sources/Modules/Services/flowge/Lib/ ./Sources/Modules/Services/fs/Lib/ ./Sources/Modules/Services/system/Lib/ ./Sources/Modules/uisd/flowge/Lib/
 
 github-action: deps-llvm build
 
